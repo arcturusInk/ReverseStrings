@@ -1,2 +1,2 @@
 # ReverseStrings
-Reversing strings in four different ways
+Since so many questions are asked on reversing strings, I coded up four different ways of doing so. Enjoy...
