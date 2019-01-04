@@ -1,6 +1,23 @@
 package com.company;
 
 public class ReverseStrings {
+    
+    //Time Complexity: O(n)
+    public static String reverseWordWithStack(String word){
+        if(word.length() == 0){
+            return word;
+        }
+        Stack<Character> stack = new Stack();
+        StringBuilder reverseWord = new StringBuilder();
+        for(int i = 0; i < word.length(); ++i){
+            stack.push(word.charAt(i));
+        }
+        while(!word.isEmpty()){
+            reverseWord.append(stack.pop());
+        }
+        return reverseWord.toString();
+    }
+    
     //Time Complexity: O(n)
     public static String reverseWordIteratively(String word){
         StringBuilder reverseWord = new StringBuilder();
